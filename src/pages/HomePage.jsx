@@ -18,7 +18,7 @@ const HomePage = () => {
 
     try {
       setLoading(true);
-      const response = await fetch("https://optify-ai-backend.onrender.com", {
+      const response = await fetch("https://optify-ai-backend.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
